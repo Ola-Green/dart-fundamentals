@@ -1,6 +1,6 @@
-/* variables can declared by explicity specifying their type or
+/* variables can declared by explicitly specifying their type or
 
-or by allowing dart infer their type through type reference by using the keyword
+by allowing dart infer their type through type inference by using the keyword
 
 var
 
@@ -8,18 +8,25 @@ var
 
 
 void main(){
-  print("may name is " + name + " and I know " + stack["lng"] + " ," 
+  print("my name is " + name + " and I know " + stack["lng"] + " ," 
   + stack["backend"] + " and " + stack["frontend"] + ".");
 
-  print("room temperature is about  ${temperature}");
+  print("room temperature is about  $temperature");
 
   for(String pn in planets){
     print(pn + " is a planet");
   }
 
+  // looping through the map object
+
+  stack.forEach((key,value) {
+    print("$key : $value");
+
+  });
+
 }
 
-String name = "Ola";// explicity specifying the type, which is String in this case
+String name = "Ola";// explicitly specifying the type, which is String in this case
 
 Map<String ,dynamic> stack = {
 

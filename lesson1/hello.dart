@@ -5,9 +5,9 @@ in dart is Object. Object has types. Object is an instance of a class.
 
 Every dart application requires a top level main() function where the execution of 
 
-our programs start. This main() function is of return type void. Functions of that
+our programs start. This main() function is of return type void. Functions that
 
-have return type of void(as the name suggests) don't explicity return a value.
+have return type of void(as the name suggests) don't explicitly return a value.
 
 We don't use return statement in a void function.
 
@@ -28,8 +28,6 @@ class ToolBox{}
 void main(){
   print("hello world");
 
-  int x;
-  
   
   var sb = Shoebox();
 
