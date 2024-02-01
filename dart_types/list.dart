@@ -1,3 +1,5 @@
+
+
 List<String> fruits = ["banana", "orange", "mango"];
 
 
@@ -8,9 +10,19 @@ List<int> nums = [12, 9, 3, 90, 11, 15];
 
 var num = [];
 
+ mySelf(String? name, int age){
+  return "My name is $name and I am $age";
+}
+
+var result = mySelf("Sola",15);
+
+
+
  
 
 void main(){
+
+  print(result);
   
   fruits.add("carrot");
   fruits.add("potato");
@@ -28,6 +40,9 @@ void main(){
   print(inc);
 
   print("");
+
+  print(nums.indexOf(90));
+
 
   fruits.map((food) => print(food)).toList();
 
